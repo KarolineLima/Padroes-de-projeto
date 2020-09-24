@@ -1,7 +1,0 @@
-INDEX VERSION 1.131+/home/karoline/java/eclipse/workspace-padroes/.metadata/.plugins/org.eclipse.jdt.core
-408060418.index
-1610413134.index
-2728356107.index
-3345860731.index
-2328276586.index
-232440459.index
