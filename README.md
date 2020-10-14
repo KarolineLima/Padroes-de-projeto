@@ -1,8 +1,11 @@
 # Exercícios da Disciplina de Padrões de Projeto
 
-Linguagem utilizada na disciplina: JAVA
+Linguagem utilizada na disciplina: **JAVA**
 
-## Padrões GoF
+# Padrões GoF
+
+## _Padrões Criacionais_
+
 
 ### Factory Method
 
@@ -31,3 +34,82 @@ Vestimenta: camisa (string), sapato (string) e acessórios (string).
 
 
 
+### Singleton
+
+
+**_[Primeira questão - ExSingleton](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExSingleton)_**
+
+**_[Segunda questão - ExSingleton-threadsafe](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExSingleton-threadsafe)_**
+
+
+1. Escreva, compile e execute o programa abaixo. Em seguida, troque sua implementação para que a classe Incremental seja Singleton. Execute novamente e veja os resultados.
+```
+class Incremental {
+             private static int count = 0;
+             private int numero;
+
+             public Incremental() {
+                          numero = ++count;
+             }
+             public String toString() {
+                          return "Incremental " + numero;
+             }
+}
+```
+
+```
+public class TesteIncremental {
+             public static void main(String[] args) {
+                          for (int i = 0; i < 10; i++) {
+                                       Incremental inc = new Incremental();
+                                       System.out.println(inc);
+                          }
+             }
+}
+```
+
+2. Imagine que o objeto Incremental (Singleton) é utilizado por várias threads. Reimplemente sua solução com o intuito de garantir que diferentes threads nunca consigam criar mais de uma instância da classe Incremental. Explique as vantagens e/ou desvantagens da abordagem que você utilizou para tornar sua classe Incremental (Singleton) thread-safe.
+
+
+### Builder Restaurante
+
+**_[ExBuilderRestaurante](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExBuilderRestaurante)_**
+
+Na cadeia de restaurantes fast-food Builder Burgers há um padrão para montagem de lanches de crianças. O sanduíche (hambúrguer ou cheeseburger), a batata (pequena, média ou grande) e o brinquedo (carrinho ou bonequinha) são colocados dentro de uma caixa e o refrigerante (coca ou guaraná) é entregue fora da caixa. A classe abaixo é dada para representar o pedido de um consumidor:
+
+```
+import java.util.*;
+public class Pedido {
+         private Set<String> dentroDaCaixa = new HashSet<String>();
+         private Set<String> foraDaCaixa = new HashSet<String>();
+
+         public void adicionarDentroDaCaixa(String item) {
+                  dentroDaCaixa.add(item);
+         }
+         public void adicionarForaDaCaixa(String item) {
+                  foraDaCaixa.add(item);
+         }
+         public String toString() {
+                  StringBuffer buffer = new StringBuffer();
+                  buffer.append("Seu pedido:\n");
+                  buffer.append("Dentro da caixa:\n");
+                  for (String item : dentroDaCaixa)
+                           buffer.append("\t" + item + "\n");
+                  buffer.append("Fora da caixa:\n");
+                  
+                  for (String item : foraDaCaixa)
+                           buffer.append("\t" + item + "\n");
+                  buffer.append("\nTenha um bom dia!\n\n");
+                  
+                  return buffer.toString();
+         }
+}
+```
+
+Neste caso, o padrão Builder pode ser usado para separar as tarefas do atendente e do funcionário que monta o pedido. Somente este último sabe como montar os pedidos segundo os padrões da empresa, mas é o atendente quem lhe informa quais itens o consumidor pediu. Implemente a simulação do restaurante fast-food descrita acima utilizando o padrão Builder e escreva uma classe cliente que pede um lanche ao atendente, recebe-o do outro funcionário e imprime o pedido.
+
+
+
+## _Padrões Estruturais_
+
+## _Padrões Comportamentais_
