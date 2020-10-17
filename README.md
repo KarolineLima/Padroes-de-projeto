@@ -112,4 +112,15 @@ Neste caso, o padrão Builder pode ser usado para separar as tarefas do atendent
 
 ## _Padrões Estruturais_
 
+
+### Adapter Class
+
+**_[ExAdapterClass](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExAdapterClass)_**
+
+Considere os códigos fonte de um cliente, uma interface para um somador que ele espera utilizar e uma classe concreta que implementa uma soma, mas não da maneira esperada pelo cliente. 
+Como você pode ver abaixo, o cliente espera usar uma classe que soma inteiros em um vetor, mas a classe pronta soma inteiros em uma lista. 
+Crie um adaptador para resolver esta situação.
+
+markdown ![GitHub Logo](images/logo.png)
+
 ## _Padrões Comportamentais_
