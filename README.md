@@ -43,7 +43,10 @@ Vestimenta: camisa (string), sapato (string) e acessórios (string).
 
 
 1. Escreva, compile e execute o programa abaixo. Em seguida, troque sua implementação para que a classe Incremental seja Singleton. Execute novamente e veja os resultados.
-```
+
+
+~~~java
+
 class Incremental {
              private static int count = 0;
              private int numero;
@@ -55,9 +58,10 @@ class Incremental {
                           return "Incremental " + numero;
              }
 }
-```
 
-```
+~~~
+~~~java
+
 public class TesteIncremental {
              public static void main(String[] args) {
                           for (int i = 0; i < 10; i++) {
@@ -66,7 +70,8 @@ public class TesteIncremental {
                           }
              }
 }
-```
+
+~~~
 
 2. Imagine que o objeto Incremental (Singleton) é utilizado por várias threads. Reimplemente sua solução com o intuito de garantir que diferentes threads nunca consigam criar mais de uma instância da classe Incremental. Explique as vantagens e/ou desvantagens da abordagem que você utilizou para tornar sua classe Incremental (Singleton) thread-safe.
 
@@ -77,7 +82,7 @@ public class TesteIncremental {
 
 Na cadeia de restaurantes fast-food Builder Burgers há um padrão para montagem de lanches de crianças. O sanduíche (hambúrguer ou cheeseburger), a batata (pequena, média ou grande) e o brinquedo (carrinho ou bonequinha) são colocados dentro de uma caixa e o refrigerante (coca ou guaraná) é entregue fora da caixa. A classe abaixo é dada para representar o pedido de um consumidor:
 
-```
+~~~java
 import java.util.*;
 public class Pedido {
          private Set<String> dentroDaCaixa = new HashSet<String>();
@@ -104,7 +109,7 @@ public class Pedido {
                   return buffer.toString();
          }
 }
-```
+~~~
 
 Neste caso, o padrão Builder pode ser usado para separar as tarefas do atendente e do funcionário que monta o pedido. Somente este último sabe como montar os pedidos segundo os padrões da empresa, mas é o atendente quem lhe informa quais itens o consumidor pediu. Implemente a simulação do restaurante fast-food descrita acima utilizando o padrão Builder e escreva uma classe cliente que pede um lanche ao atendente, recebe-o do outro funcionário e imprime o pedido.
 
@@ -113,14 +118,17 @@ Neste caso, o padrão Builder pode ser usado para separar as tarefas do atendent
 ## _Padrões Estruturais_
 
 
-### Adapter Class
+### Class Adapter
 
-**_[ExAdapterClass](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExAdapterClass)_**
+**_[ExClassAdapter](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExClassAdapter)_**
 
 Considere os códigos fonte de um cliente, uma interface para um somador que ele espera utilizar e uma classe concreta que implementa uma soma, mas não da maneira esperada pelo cliente. 
 Como você pode ver abaixo, o cliente espera usar uma classe que soma inteiros em um vetor, mas a classe pronta soma inteiros em uma lista. 
 Crie um adaptador para resolver esta situação.
 
-markdown ![GitHub Logo](images/logo.png)
+
+<img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/AdapterProblem.png" width="550"/>
+
+
 
 ## _Padrões Comportamentais_
