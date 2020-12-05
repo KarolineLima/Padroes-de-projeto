@@ -182,7 +182,7 @@ Cricket e Football devem ser classes concretas que estendam a Game e sobrescreva
 TemplatePatternDemo, deve ser a classe de demonstração e deve usar o Game para demonstrar o uso do padrão Template Method.
 
 <img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/TemplateMethodProblem.png" width="500"/>
-
+or
 
 
 ### Chain of Responsability
@@ -190,3 +190,15 @@ TemplatePatternDemo, deve ser a classe de demonstração e deve usar o Game para
 **_[ExChainOfResponsability-FabricaBolo](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExChainOfResponsability-FabricaBolo)_**
 
 Traga um exemplo de código que utilize o padrão de projeto Chain of responsability!!
+
+
+
+### Iterator
+
+**_[ExIterator](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExIterator)_**
+
+Imagine que você está trabalhando no sistema da NET.
+Você precisará lidar com coleções armazenadas de diferentes formas: coleção de canais de filmes, de canais de esporte, etc. Que podem ser armazenadas em diferentes estruturas (array, arrayList).
+Melhore a implementação deste problema com o uso de Iterator.
+
+<img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/IteratorProblem.png" width="500"/>
