@@ -130,5 +130,63 @@ Crie um adaptador para resolver esta situação.
 <img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/AdapterProblem.png" width="550"/>
 
 
+### Bridge
+
+**_[ExBridge](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExBridge)_**
+
+Melhore a arquitetura apresentada a seguir utilizando o padrão Bridge. A estrutura abaixo serve para lidar com implementações específicas para tratar um objeto em diferentes meios persistentes em um Editora.
+
+<img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/BridgeProblem.png" width="550"/>
+
+
+**_Resposta em Diagramação:_**
+
+<img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/Diagrama%20de%20Classes%20-%20Exemplo%20Bridge.png" width="800"/>
+
+### Composite
+
+**_[ExComposite](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExComposite)_**
+
+Como poderia ser resolvido o problema abaixo?
+
+◦ É preciso saber quantas pessoas irão participar do congresso
+
+◦ Participantes podem ser pessoas ou instituição
+
+<img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/CompositeProblem.png" width="550"/>
+
+
+### Decorator
+
+**_[ExDecorator](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExDecorator)_**
+
+Suponha que você esteja trabalhando em um kit de ferramentas de interface do usuário e deseja oferecer suporte à adição de bordas e barras de rolagem às janelas. Você pode definir uma hierarquia de herança como a figura a seguir.
+
+Utilize o padrão Decorator para dar ao cliente a capacidade de especificar qualquer combinação de "recursos" desejada.
+
+<img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/DecoratorProblem.png" width="550"/>
+
+
 
 ## _Padrões Comportamentais_
+
+
+### Template Method
+
+**_[ExTemplateMethod](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExTemplateMethod)_**
+
+Crie uma classe abstrata Game definindo operações com um template method definido como final para que não possa ser substituído. 
+
+Cricket e Football devem ser classes concretas que estendam a Game e sobrescrevam seus métodos.
+
+TemplatePatternDemo, deve ser a classe de demonstração e deve usar o Game para demonstrar o uso do padrão Template Method.
+
+<img src="https://github.com/KarolineLima/Padroes-de-projeto/blob/master/ImagensExemplos/TemplateMethodProblem.png" width="500"/>
+
+
+
+### Chain of Responsability
+
+**_[ExChainOfResponsability-FabricaBolo](https://github.com/KarolineLima/Padroes-de-projeto/tree/master/ExChainOfResponsability-FabricaBolo)_**
+
+Traga um exemplo de código que utilize o padrão de projeto Chain of responsability!!
